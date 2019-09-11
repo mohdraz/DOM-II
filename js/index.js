@@ -176,7 +176,7 @@ window.onresize = resizeElement;
 
 const images = document.querySelectorAll('img');
 images.forEach( (element) => {
-    element.addEventListener('click', (e) => {
+    element.addEventListener('auxclick', (e) => {
         e.target.style.transform = 'scale(1.5)';
         setTimeout(() => e.target.style.transform = '' ,3000);
     })
